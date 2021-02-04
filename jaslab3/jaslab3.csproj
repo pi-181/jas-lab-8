@@ -92,14 +92,44 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="CabinForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="CabinForm.Designer.cs">
+          <DependentUpon>CabinForm.cs</DependentUpon>
+        </Compile>
+        <Compile Include="ConnectionForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="ConnectionForm.Designer.cs">
+          <DependentUpon>ConnectionForm.cs</DependentUpon>
+        </Compile>
         <Compile Include="MainForm.cs">
             <SubType>Form</SubType>
         </Compile>
         <Compile Include="MainForm.Designer.cs">
             <DependentUpon>MainForm.cs</DependentUpon>
         </Compile>
+        <Compile Include="PassengerForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="PassengerForm.Designer.cs">
+          <DependentUpon>PassengerForm.cs</DependentUpon>
+        </Compile>
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <EmbeddedResource Include="CabinForm.resx">
+          <DependentUpon>CabinForm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="ConnectionForm.resx">
+          <DependentUpon>ConnectionForm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="MainForm.resx">
+          <DependentUpon>MainForm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="PassengerForm.resx">
+          <DependentUpon>PassengerForm.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>
