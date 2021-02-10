@@ -137,9 +137,9 @@ namespace jaslab3
             _cabinForm.Visible = true;
             var selectedRow = cabinGrid.SelectedCells[0].RowIndex;
             var cabinName = (string) _dataSet.Tables["cabins"].Rows[selectedRow].ItemArray[1];
-            var cabinSquare = (string) _dataSet.Tables["cabins"].Rows[selectedRow].ItemArray[2];
+            var cabinSquare = (int) _dataSet.Tables["cabins"].Rows[selectedRow].ItemArray[2];
             var cabinClass = (string) _dataSet.Tables["cabins"].Rows[selectedRow].ItemArray[3];
-            _cabinForm.Reset(true, cabinName, cabinSquare, cabinClass);
+            _cabinForm.Reset(true, cabinName, cabinSquare.ToString(), cabinClass);
             _cabinForm.Row = selectedRow;
         }
 
