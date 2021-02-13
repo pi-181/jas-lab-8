@@ -22,5 +22,10 @@ namespace jaslab3
             Parent.FillCabinsGrid();
             Visible = false;
         }
+
+        public void SetPassword(string pass)
+        {
+            passwordBox.Text = pass;
+        }
     }
 }
